@@ -1,6 +1,6 @@
 # Tickets.com WebApp Automation
 
-[![Playwright](https://img.shields.io/badge/playwright-v1.36.1-blue)](https://playwright.dev/)
+[![Playwright](https://img.shields.io/badge/playwright-v1.44.1-blue)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/typescript-v5.1.3-blue)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/node.js-v18.11.0-blue)](https://nodejs.org/en/)
 
@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository to your local machine.
 
 ```bash
-git https://github.com/yermanjulia/tickets.com
+git clone https://github.com/yermanjulia/tickets.com
 cd tickets.com
 ```
 
