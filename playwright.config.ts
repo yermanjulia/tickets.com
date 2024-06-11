@@ -46,10 +46,10 @@ export default defineConfig({
       use: { ...devices["Desktop Firefox"] },
     },
 
-    // {
-    //   name: "Safari Desktop Webkit",
-    //   use: { ...devices["Desktop Safari"] },
-    // },
+    {
+      name: "Safari Desktop Webkit",
+      use: { ...devices["Desktop Safari"] },
+    },
 
     {
       name: "Microsoft Edge",
