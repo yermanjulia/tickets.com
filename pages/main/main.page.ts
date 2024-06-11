@@ -7,6 +7,10 @@ export class MainPage {
   readonly searchInput: Locator;
   readonly findButton: Locator;
   readonly categoryDropdown: Locator;
+  readonly selectSearchValueByTeamAddress = (teamAddress: string) =>
+    this.page.frameLocator("#iFrameResizer0").getByText(teamAddress);
+  readonly mapTeamInfoWindow: Locator;
+  readonly mapTicketsLink: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -21,6 +25,12 @@ export class MainPage {
     this.categoryDropdown = this.page
       .frameLocator("#iFrameResizer0")
       .locator("[data-operator='ILIKE'] select");
+    this.mapTeamInfoWindow = this.page
+      .frameLocator("#iFrameResizer0")
+      .locator(".cartodb-infowindow");
+    this.mapTicketsLink = this.page
+      .frameLocator("#iFrameResizer0")
+      .locator('//a[contains(text(),"Tickets")]');
   }
 
   async open() {
